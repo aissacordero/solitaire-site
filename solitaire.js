@@ -63,3 +63,10 @@ window.onload = () => {
   dealCards();
   drawCards();
 };
+function unlockGame() {
+  document.getElementById('subscribe-box').style.display = 'none';
+  document.getElementById('game-box').style.display = 'block';
+}
+
+// 👇 This line makes it available to your HTML
+window.unlockGame = unlockGame;

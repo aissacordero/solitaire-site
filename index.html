@@ -1,51 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Solitaire</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <style>
-    body {
-      margin: 0;
-      background-color: #006400;
-      font-family: sans-serif;
-      color: white;
-      text-align: center;
-    }
-    canvas {
-      display: block;
-      margin: 20px auto;
-      border: 2px solid white;
-      background-color: #228B22;
-    }
-    button {
-      padding: 10px 20px;
-      font-size: 16px;
-      margin: 10px;
-      cursor: pointer;
-    }
-  </style>
-</head>
 <body>
   <h1>Solitaire</h1>
-  <button onclick="restartGame()">🔁 Restart</button>
-  <canvas id="gameCanvas" width="1024" height="768"></canvas>
 
-  <!-- Buy Me a Coffee floating widget -->
-  <script data-name="BMC-Widget"
-    src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
-    data-id="aissacordero"
-    data-description="Support me on Buy Me a Coffee!"
-    data-message="Coding my dream into reality — support me ☕"
-    data-color="#FFDD00"
-    data-position="Right"
-    data-x_margin="18"
-    data-y_margin="18">
-  </script>
+  <!-- Subscribe Section -->
+  <div id="subscribe-box" style="text-align:center;">
+    <a href="https://buy.stripe.com/YOUR-REAL-SUBSCRIPTION-LINK" target="_blank">
+      <button style="padding: 12px 24px; font-size: 18px; background-color: gold; border: none; border-radius: 6px; cursor: pointer;">
+        Subscribe to Play 🃏 $4.99/mo
+      </button>
+    </a>
+    <p style="color: white; margin-top: 12px;">
+      Already subscribed? <a href="#" onclick="unlockGame()">Click here</a>
+    </p>
+  </div>
 
+  <!-- Game Section (hidden until subscribed) -->
+  <div id="game-box" style="display: none;">
+    <button onclick="restartGame()" style="margin-top: 10px;">🔁 Restart</button>
+    <canvas id="gameCanvas" width="1024" height="768"></canvas>
+  </div>
+
+  <!-- Website credit -->
+  <p style="color: white; font-size: 14px; text-align: center; margin-top: 20px;">
+    Website by Aissa ❤️
+  </p>
+
+  <!-- Load Game Script -->
   <script src="solitaire.js"></script>
 </body>
-</html>
-<p style="color: white; font-size: 14px; margin-top: 20px;">
-  Website by Aissa ❤️
-</p>

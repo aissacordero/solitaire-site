@@ -2,16 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <title>Solitaire</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Solitaire Game</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      background-color: #006400;
+      font-family: sans-serif;
+      color: white;
+      text-align: center;
+    }
+    canvas {
+      display: block;
+      margin: 20px auto;
+      border: 2px solid white;
+      background-color: #228B22;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-  <h1>🃏 Solitaire</h1>
-  <canvas id="gameCanvas" width="800" height="600"></canvas>
-  <p>Simple Solitaire by Aissa 💖</p>
+  <h1>Solitaire</h1>
+  <button onclick="restartGame()">🔁 Restart</button>
+  <canvas id="gameCanvas" width="1024" height="768"></canvas>
+
+  <!-- Buy Me a Coffee floating widget -->
+  <script data-name="BMC-Widget"
+    src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+    data-id="aissacordero"
+    data-description="Support me on Buy Me a Coffee!"
+    data-message="Coding my dream into reality — support me ☕"
+    data-color="#FFDD00"
+    data-position="Right"
+    data-x_margin="18"
+    data-y_margin="18">
+  </script>
+
   <script src="solitaire.js"></script>
 </body>
 </html>
-<canvas id="gameCanvas" width="800" height="600" style="background-color: green;"></canvas>
-<script src="solitaire.js"></script>
+<p style="color: white; font-size: 14px; margin-top: 20px;">
+  Website by Aissa ❤️
+</p>
